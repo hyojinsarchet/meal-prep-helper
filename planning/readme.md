@@ -57,6 +57,6 @@ This is a Meal-Prep-Helper app. It has the following features:
 
 ### Wireframes
 
-![Page1](images/wireframe1.jpeg)
-![Page2](images/wireframe1.jpeg)
-![Page3](images/wireframe1.jpeg)
+![Page1](wireframe1.jpeg)
+![Page2](wireframe1.jpeg)
+![Page3](wireframe1.jpeg)
