@@ -1,0 +1,22 @@
+.Suggestion {
+  margin: 70px auto;
+}
+
+.suggestion-title {
+  text-align: left;
+  margin-left: 200px;
+  text-decoration: underline;
+}
+
+.Slider {
+}
+
+.meal-one,
+.meal-two,
+.meal-three,
+.meal-four,
+.meal-five,
+.meal-six {
+  padding-right: 50px;
+}
+/* This margin is not working. Need to find out how to make it work! */

@@ -1,0 +1,21 @@
+.Header {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.header-title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.header-links {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.header-plan {
+  margin-right: 20px;
+}
+
+.header-ingredients {
+}
