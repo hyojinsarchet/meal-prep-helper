@@ -1,85 +1,83 @@
-// import React, { Component } from "react";
-// import "./Plan.css";
-// import { render } from "react-dom";
-// import { makeData, Logo, Tips } from "./Utils";
-//
-// // Import React Table
-// import ReactTable from "react-table";
-// import "react-table/react-table.css";
-//
-// class Plan extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       data: makeData()
-//     };
-//     this.renderEditable = this.renderEditable.bind(this);
-//   }
-//   renderEditable(cellInfo) {
-//     return (
-//       <div
-//         style={{ backgroundColor: "#fafafa" }}
-//         contentEditable
-//         suppressContentEditableWarning
-//         onBlur={e => {
-//           const data = [...this.state.data];
-//           data[cellInfo.index][cellInfo.column.id] = e.target.innerHTML;
-//           this.setState({ data });
-//         }}
-//         dangerouslySetInnerHTML={{
-//           __html: this.state.data[cellInfo.index][cellInfo.column.id]
-//         }}
-//       />
-//     );
-//   }
-//   render() {
-//     const { data } = this.state;
-//     return (
-//       <div>
-//         <ReactTable
-//           data={data}
-//           columns={[
-//             {
-//               Header: "First Name",
-//               accessor: "firstName",
-//               Cell: this.renderEditable
-//             },
-//             {
-//               Header: "Last Name",
-//               accessor: "lastName",
-//               Cell: this.renderEditable
-//             },
-//             {
-//               Header: "Full Name",
-//               id: "full",
-//               accessor: d => (
-//                 <div
-//                   dangerouslySetInnerHTML={{
-//                     __html: d.firstName + " " + d.lastName
-//                   }}
-//                 />
-//               )
-//             }
-//           ]}
-//           defaultPageSize={10}
-//           className="-striped -highlight"
-//         />
-//         <br />
-//         <Tips />
-//         <Logo />
-//       </div>
-//     );
-//   }
-// }
+import React, { Component } from "react";
+import "./Plan.css";
+import Form from "./Form";
+import Table from "./Table";
 
-// class Plan extends Component {
-//   render() {
-//     return (
-//       <div className="Plan">
-//         <h2 className="plan-title">Weekly Meal Plan</h2>
-//       </div>
-//     );
-//   }
-// }
-// export default Plan;
-// render(<Plan />, document.getElementById("root"));
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import injectTapEventPlugin from "react-tap-event-plugin";
+
+injectTapEventPlugin();
+
+class Plan extends Component {
+  state = {
+    data: [],
+    editIdx: -1
+  };
+
+  handleRemove = i => {
+    this.setState(state => ({
+      data: state.data.filter((x, j) => j !== i)
+    }));
+  };
+
+  startEditing = i => {
+    this.setState({ editIdx: i });
+  };
+
+  stopEditing = () => {
+    this.setState({ editIdx: -1 });
+  };
+
+  handleChange = (e, name, i) => {
+    const { value } = e.target;
+    this.setState(state => ({
+      data: state.data.map(
+        (row, j) => (j === i ? { ...row, [name]: value } : row)
+      )
+    }));
+  };
+
+  render() {
+    return (
+      <MuiThemeProvider>
+        <div className="Plan">
+          <h2 className="plan-title">Weekly Meal Plan</h2>
+          <Form
+            onSubmit={submission =>
+              this.setState({
+                data: [...this.state.data, submission]
+              })
+            }
+          />
+          <Table
+            handleRemove={this.handleRemove}
+            startEditing={this.startEditing}
+            editIdx={this.state.editIdx}
+            handleChange={this.handleChange}
+            stopEditing={this.stopEditing}
+            data={this.state.data}
+            header={[
+              {
+                name: "Day",
+                prop: "day"
+              },
+              {
+                name: "Meal Type",
+                prop: "mealType"
+              },
+              {
+                name: "Meal Name",
+                prop: "mealName"
+              }
+            ]}
+          />
+          {/* <p>{JSON.stringify(this.state.fields, null, 2)}</p> */}
+        </div>
+      </MuiThemeProvider>
+    );
+  }
+}
+export default Plan;
+
+// I took this React Youtube classes to learn React Form and Table:
+// https://www.youtube.com/watch?v=FDzF2nHUexQ&list=PLN3n1USn4xllZIJyrGvCu5ihs2GoMtk1Q

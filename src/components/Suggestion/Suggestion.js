@@ -62,6 +62,56 @@ class Suggestion extends Component {
               <img src="images/meal6.jpg" alt="meal-six" />
             </a>
           </div>
+          <div>
+            <a className="meal-seven" href="">
+              <img src="images/meal7.jpg" alt="meal-seven" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-eight" href="">
+              <img src="images/meal8.jpg" alt="meal-eight" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-nine" href="">
+              <img src="images/meal9.jpg" alt="meal-nine" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-ten" href="">
+              <img src="images/meal10.jpg" alt="meal-ten" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-eleven" href="">
+              <img src="images/meal11.jpg" alt="meal-eleven" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-twelve" href="">
+              <img src="images/meal12.jpg" alt="meal-twelve" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-thirteen" href="">
+              <img src="images/meal13.jpeg" alt="meal-thirteen" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-fourteen" href="">
+              <img src="images/meal14.jpg" alt="meal-fourteen" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-fifteen" href="">
+              <img src="images/meal15.jpg" alt="meal-fifteen" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-sixteen" href="">
+              <img src="images/meal16.jpg" alt="meal-sixteen" />
+            </a>
+          </div>
         </Slider>
         <div style={{ textAlign: "center" }}>
           <button className="button" onClick={this.play}>
