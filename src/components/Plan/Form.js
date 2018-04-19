@@ -102,9 +102,10 @@ class Form extends Component {
         <br />
         <RaisedButton
           className="button"
-          label="Submit"
+          label="Add Meal"
+          labelColor="white"
           onClick={e => this.onSubmit(e)}
-          primary
+          backgroundColor="#bf0000"
         />
       </form>
     );

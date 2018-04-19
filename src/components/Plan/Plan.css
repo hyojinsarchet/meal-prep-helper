@@ -30,6 +30,6 @@
   margin: 50px 150px 0px 150px;
 }
 
-.form .button {
-  background-color: #bf0000;
+.button:hover {
+  opacity: 0.5;
 }

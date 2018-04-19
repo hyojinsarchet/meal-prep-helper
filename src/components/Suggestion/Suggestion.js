@@ -33,51 +33,11 @@ class Suggestion extends Component {
           ref={slider => (this.slider = slider)}
           {...settings}
         >
-          <div>
+          {/* <div>
             <a className="meal-one" href="">
               <img src="images/meal1.jpeg" alt="meal-one" />
             </a>
-          </div>
-          <div>
-            <a className="meal-two" href="">
-              <img src="images/meal2.jpg" alt="meal-two" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-three" href="">
-              <img src="images/meal3.jpg" alt="meal-three" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-four" href="">
-              <img src="images/meal4.jpg" alt="meal-four" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-five" href="">
-              <img src="images/meal5.jpeg" alt="meal-five" />
-            </a>
-          </div>
-          {/* <div>
-            <a className="meal-six" href="">
-              <img src="images/meal6.jpg" alt="meal-six" />
-            </a>
           </div> */}
-          <div>
-            <a className="meal-seven" href="">
-              <img src="images/meal7.jpg" alt="meal-seven" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-eight" href="">
-              <img src="images/meal8.jpg" alt="meal-eight" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-nine" href="">
-              <img src="images/meal9.jpg" alt="meal-nine" />
-            </a>
-          </div>
           <div>
             <a className="meal-ten" href="">
               <img src="images/meal10.jpg" alt="meal-ten" />
@@ -88,11 +48,58 @@ class Suggestion extends Component {
               <img src="images/meal11.jpg" alt="meal-eleven" />
             </a>
           </div>
+
           <div>
             <a className="meal-twelve" href="">
               <img src="images/meal12.jpg" alt="meal-twelve" />
             </a>
           </div>
+
+          <div>
+            <a className="meal-eight" href="">
+              <img src="images/meal8.jpg" alt="meal-eight" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-nine" href="">
+              <img src="images/meal9.jpg" alt="meal-nine" />
+            </a>
+          </div>
+
+          <div>
+            <a className="meal-two" href="">
+              <img src="images/meal2.jpg" alt="meal-two" />
+            </a>
+          </div>
+
+          <div>
+            <a className="meal-four" href="">
+              <img src="images/meal4.jpg" alt="meal-four" />
+            </a>
+          </div>
+          <div>
+            <a className="meal-three" href="">
+              <img src="images/meal3.jpg" alt="meal-three" />
+            </a>
+          </div>
+
+          <div>
+            <a className="meal-sixteen" href="">
+              <img src="images/meal16.jpg" alt="meal-sixteen" />
+            </a>
+          </div>
+
+          {/* <div>
+            <a className="meal-five" href="">
+              <img src="images/meal5.jpeg" alt="meal-five" />
+            </a>
+          </div> */}
+          {/* <div>
+            <a className="meal-six" href="">
+              <img src="images/meal6.jpg" alt="meal-six" />
+            </a>
+          </div> */}
+
           <div>
             <a className="meal-thirteen" href="">
               <img src="images/meal13.jpeg" alt="meal-thirteen" />
@@ -109,8 +116,8 @@ class Suggestion extends Component {
             </a>
           </div>
           <div>
-            <a className="meal-sixteen" href="">
-              <img src="images/meal16.jpg" alt="meal-sixteen" />
+            <a className="meal-seven" href="">
+              <img src="images/meal7.jpg" alt="meal-seven" />
             </a>
           </div>
         </Slider>

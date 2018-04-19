@@ -29,3 +29,7 @@
 .forms-tables {
   margin: 50px 150px 0px 150px;
 }
+
+.button:hover {
+  opacity: 0.5;
+}
