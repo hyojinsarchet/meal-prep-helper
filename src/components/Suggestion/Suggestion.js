@@ -27,6 +27,7 @@ class Suggestion extends Component {
     return (
       <div className="Suggestion">
         <h2 className="suggestion-title">Meal suggestion for this week</h2>
+        <p>- Click the image to check out the recipes!</p>
         <Slider
           className="Slider"
           ref={slider => (this.slider = slider)}

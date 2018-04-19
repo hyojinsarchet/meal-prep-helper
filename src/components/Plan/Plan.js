@@ -42,6 +42,7 @@ class Plan extends Component {
       <MuiThemeProvider>
         <div className="Plan">
           <h2 className="plan-title">Weekly Meal Plan</h2>
+          <p>- Plan your meals ahead and save your time and money!</p>
           <Form
             onSubmit={submission =>
               this.setState({

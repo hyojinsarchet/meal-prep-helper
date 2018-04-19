@@ -6,6 +6,7 @@
 .header-title {
   text-align: center;
   font-size: 3em;
+  padding-top: 50px;
 }
 
 .header-links {
@@ -15,7 +16,15 @@
 
 .header-plan {
   margin-right: 20px;
+  color: #bf0000;
 }
 
 .header-ingredients {
+  color: #bf0000;
+}
+
+.header-plan:hover,
+.header-ingredients:hover {
+  color: white;
+  text-decoration: none;
 }

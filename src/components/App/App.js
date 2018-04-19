@@ -13,6 +13,7 @@ class App extends Component {
         <Header />
         <Suggestion />
         <Plan />
+        <Ingredients />
         <Footer />
       </div>
     );
