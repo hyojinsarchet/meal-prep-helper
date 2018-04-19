@@ -43,27 +43,30 @@ class Ingredients extends Component {
         <div className="Ingredients">
           <h2 className="ingredient-title">Shopping List</h2>
           <p>- Add the ingredients you need to buy for upcoming week!</p>
-          <Forms
-            onSubmit={submission =>
-              this.setState({
-                data: [...this.state.data, submission]
-              })
-            }
-          />
-          <Tables
-            handleRemove={this.handleRemove}
-            startEditing={this.startEditing}
-            editIdx={this.state.editIdx}
-            handleChange={this.handleChange}
-            stopEditing={this.stopEditing}
-            data={this.state.data}
-            header={[
-              {
-                name: "Ingredient",
-                prop: "ingredient"
+          <div className="forms-tables">
+            <Forms
+              onSubmit={submission =>
+                this.setState({
+                  data: [...this.state.data, submission]
+                })
               }
-            ]}
-          />
+            />
+            <hr />
+            <Tables
+              handleRemove={this.handleRemove}
+              startEditing={this.startEditing}
+              editIdx={this.state.editIdx}
+              handleChange={this.handleChange}
+              stopEditing={this.stopEditing}
+              data={this.state.data}
+              header={[
+                {
+                  name: "Ingredient",
+                  prop: "ingredient"
+                }
+              ]}
+            />
+          </div>
         </div>
       </MuiThemeProvider>
     );

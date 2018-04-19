@@ -5,8 +5,16 @@ import Table from "./Table";
 
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import injectTapEventPlugin from "react-tap-event-plugin";
-
+import getMuiTheme from "material-ui/styles/getMuiTheme";
+// import { deepOrange50, deepOrangeA700 } from "material-ui/styles/colors";
 injectTapEventPlugin();
+
+// const muiTheme = getMuiTheme({
+//   palette: {
+//     primary1Color: deepOrange50,
+//     primary2Color: deepOrangeA700
+//   }
+// });
 
 class Plan extends Component {
   state = {
@@ -40,38 +48,43 @@ class Plan extends Component {
   render() {
     return (
       <MuiThemeProvider>
+        {/* muiTheme={muiTheme} */}
         <div className="Plan">
           <h2 className="plan-title">Weekly Meal Plan</h2>
           <p>- Plan your meals ahead and save your time and money!</p>
-          <Form
-            onSubmit={submission =>
-              this.setState({
-                data: [...this.state.data, submission]
-              })
-            }
-          />
-          <Table
-            handleRemove={this.handleRemove}
-            startEditing={this.startEditing}
-            editIdx={this.state.editIdx}
-            handleChange={this.handleChange}
-            stopEditing={this.stopEditing}
-            data={this.state.data}
-            header={[
-              {
-                name: "Day",
-                prop: "day"
-              },
-              {
-                name: "Meal Type",
-                prop: "mealType"
-              },
-              {
-                name: "Meal Name",
-                prop: "mealName"
+          <div className="form-table">
+            <Form
+              onSubmit={submission =>
+                this.setState({
+                  data: [...this.state.data, submission]
+                })
               }
-            ]}
-          />
+            />
+            <hr />
+            <Table
+              className="table"
+              handleRemove={this.handleRemove}
+              startEditing={this.startEditing}
+              editIdx={this.state.editIdx}
+              handleChange={this.handleChange}
+              stopEditing={this.stopEditing}
+              data={this.state.data}
+              header={[
+                {
+                  name: "Day",
+                  prop: "day"
+                },
+                {
+                  name: "Meal Type",
+                  prop: "mealType"
+                },
+                {
+                  name: "Meal Name",
+                  prop: "mealName"
+                }
+              ]}
+            />
+          </div>
           {/* <p>{JSON.stringify(this.state.fields, null, 2)}</p> */}
         </div>
       </MuiThemeProvider>

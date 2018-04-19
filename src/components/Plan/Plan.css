@@ -1,10 +1,35 @@
+.Plan {
+  margin-top: 100px;
+}
+
 .plan-title {
   text-align: left;
-  margin-left: 200px;
+  margin-left: 150px;
   text-decoration: underline;
+  border-left: 5px solid #bf0000;
+  color: #bf0000;
+}
+
+.plan-title :hover {
+  color: white;
+  text-decoration: none;
 }
 
 .Plan p {
   text-align: left;
-  margin-left: 200px;
+  margin-left: 150px;
+}
+
+.form {
+  background-color: #ffffff;
+  margin: 50px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
+}
+
+.form-table {
+  margin: 50px 150px 0px 150px;
+}
+
+.form .button {
+  background-color: #bf0000;
 }

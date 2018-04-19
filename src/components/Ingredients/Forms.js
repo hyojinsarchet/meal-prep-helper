@@ -27,7 +27,7 @@ class Forms extends Component {
   };
   render() {
     return (
-      <form>
+      <form className="forms">
         <TextField
           name="ingredient"
           hintText="Ingredient"
@@ -37,7 +37,12 @@ class Forms extends Component {
           floatingLabelFixed
         />
         <br />
-        <RaisedButton label="Submit" onClick={e => this.onSubmit(e)} primary />
+        <RaisedButton
+          className="button"
+          label="Submit"
+          onClick={e => this.onSubmit(e)}
+          primary
+        />
       </form>
     );
   }

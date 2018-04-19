@@ -11,6 +11,7 @@ import EditIcon from "material-ui/svg-icons/image/edit";
 import TrashIcon from "material-ui/svg-icons/action/delete";
 import CheckIcon from "material-ui/svg-icons/navigation/check";
 import TextField from "material-ui/TextField";
+import "./Plan.css";
 
 const row = (
   x,
@@ -61,7 +62,8 @@ export default ({
   handleChange,
   stopEditing
 }) => (
-  <Table>
+  <Table className="table">
+    >
     <TableHeader>
       <TableRow>
         {header.map((x, i) => (

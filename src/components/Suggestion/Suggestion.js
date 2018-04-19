@@ -22,7 +22,7 @@ class Suggestion extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 2500
     };
     return (
       <div className="Suggestion">
@@ -58,11 +58,11 @@ class Suggestion extends Component {
               <img src="images/meal5.jpeg" alt="meal-five" />
             </a>
           </div>
-          <div>
+          {/* <div>
             <a className="meal-six" href="">
               <img src="images/meal6.jpg" alt="meal-six" />
             </a>
-          </div>
+          </div> */}
           <div>
             <a className="meal-seven" href="">
               <img src="images/meal7.jpg" alt="meal-seven" />
@@ -115,10 +115,10 @@ class Suggestion extends Component {
           </div>
         </Slider>
         <div style={{ textAlign: "center" }}>
-          <button className="button" onClick={this.play}>
+          <button className="button-one" onClick={this.play}>
             Play
           </button>
-          <button className="button" onClick={this.pause}>
+          <button className="button-two" onClick={this.pause}>
             Pause
           </button>
         </div>

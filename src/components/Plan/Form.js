@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
+import "./Plan.css";
 
 class Form extends Component {
   state = {
@@ -68,7 +69,7 @@ class Form extends Component {
   };
   render() {
     return (
-      <form>
+      <form className="form">
         <TextField
           name="day"
           hintText="Day"
@@ -99,7 +100,12 @@ class Form extends Component {
           floatingLabelFixed
         />
         <br />
-        <RaisedButton label="Submit" onClick={e => this.onSubmit(e)} primary />
+        <RaisedButton
+          className="button"
+          label="Submit"
+          onClick={e => this.onSubmit(e)}
+          primary
+        />
       </form>
     );
   }

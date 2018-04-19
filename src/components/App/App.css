@@ -1,12 +1,8 @@
 .App {
+  /* margin-top: 0px; */
   text-align: center;
-  /* background-color: #44393b; */
   color: white;
-  /* font-family: "Acme", sans-serif; */
-  /* font-family: "Carter One", cursive; */
-  /* font-family: "Bungee Inline", cursive; */
   font-family: "Vast Shadow", cursive;
-  /* font-family: "Montserrat", sans-serif; */
   height: 100%;
   background-image: url(/images/dark.jpg);
   background-repeat: no-repeat;
