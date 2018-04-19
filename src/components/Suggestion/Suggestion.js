@@ -101,13 +101,13 @@ class Suggestion extends Component {
           </div> */}
 
           <div>
-            <a className="meal-thirteen" href="">
-              <img src="images/meal13.jpeg" alt="meal-thirteen" />
+            <a className="meal-fourteen" href="">
+              <img src="images/meal14.jpg" alt="meal-fourteen" />
             </a>
           </div>
           <div>
-            <a className="meal-fourteen" href="">
-              <img src="images/meal14.jpg" alt="meal-fourteen" />
+            <a className="meal-thirteen" href="">
+              <img src="images/meal13.jpeg" alt="meal-thirteen" />
             </a>
           </div>
           <div>
