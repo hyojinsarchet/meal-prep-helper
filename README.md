@@ -29,6 +29,6 @@
 
 ### The main page look
 
-![main](images/main-page1.png)
-![main](images/main-page2.png)
-![main](images/main-page3.png)
+![main](./public/images/main-page1.png)
+![main](./public/images/main-page2.png)
+![main](./public/images/main-page3.png)
