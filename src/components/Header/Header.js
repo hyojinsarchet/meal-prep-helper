@@ -24,6 +24,9 @@ class Header extends Component {
           {/* <Link to="/" className="header-home">
             Home
           </Link> */}
+          <Link to="/" className="header-home">
+            Home
+          </Link>
           <Link to="/plan" className="header-plan">
             Meal Plan
           </Link>
@@ -37,3 +40,6 @@ class Header extends Component {
 }
 
 export default Header;
+
+// trying to follow this 'react router hash link' but it's not working yet:
+// https://github.com/rafrex/react-router-hash-link

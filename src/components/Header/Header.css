@@ -1,6 +1,6 @@
 .Header {
-  /* display: flex;
-  justify-content: center; */
+  margin-top: 0px;
+  height: 100%;
 }
 
 .header-title {
@@ -14,17 +14,29 @@
   margin-right: 150px;
 }
 
+.header-home {
+  margin-right: 10px;
+  color: #ff4136;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
 .header-plan {
-  margin-right: 20px;
-  color: #bf0000;
+  margin-right: 10px;
+  color: #ff4136;
+  font-size: 0.8em;
+  text-decoration: none;
 }
 
 .header-ingredients {
-  color: #bf0000;
+  color: #ff4136;
+  font-size: 0.8em;
+  margin-right: 35px;
+  text-decoration: none;
 }
 
+.header-home:hover,
 .header-plan:hover,
 .header-ingredients:hover {
   color: white;
-  text-decoration: none;
 }

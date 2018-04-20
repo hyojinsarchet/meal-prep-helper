@@ -17,15 +17,17 @@
 ### How to run
 
 * Clone this repository and open it on local server (http://localhost:3000/)
-* Click [here](deployed links here).
+* Click [here](http://meal-prep-helper.surge.sh/).
 
 ### Used tools in the project
 
-| Tools |
-| :---: |
-| React |
-| Html  |
-|  CSS  |
+|       Tools       |
+| :---------------: |
+|       React       |
+|       Html        |
+|        CSS        |
+| React Material UI |
+|    React Slick    |
 
 ### The main page look
 

@@ -42,7 +42,7 @@ class Forms extends Component {
           label="Add Ingredients"
           labelColor="white"
           onClick={e => this.onSubmit(e)}
-          backgroundColor="#bf0000"
+          backgroundColor="#FF4136"
         />
       </form>
     );

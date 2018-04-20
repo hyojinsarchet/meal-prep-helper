@@ -15,22 +15,20 @@ class App extends Component {
   render() {
     return (
       // <Router>
-      //   <div className="App">
-      //     <Header />
-      //     <Switch>
-      //       <Route exact path="/" component={Suggestion} />
-      //       <Route path="/plan" component={Plan} />
-      //       <Route path="/ingredients" component={Ingredients} />
-      //     </Switch>
-      //     <Footer />
-      //   </div>
-      // </Router>
       <div className="App">
         <Header />
         <Suggestion />
         <Plan />
         <Ingredients />
         <Footer />
+        {/* <Header />
+        <Suggestion />
+        <Switch>
+            <Route exact path="/" component={App} />
+            <Route path="/plan" component={Plan} />
+            <Route path="/ingredients" component={Ingredients} />
+          </Switch>
+        <Footer /> */}
       </div>
     );
   }

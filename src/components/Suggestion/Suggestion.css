@@ -6,8 +6,8 @@
   text-align: left;
   margin-left: 150px;
   text-decoration: underline;
-  border-left: 5px solid #bf0000;
-  color: #bf0000;
+  border-left: 5px solid #ff4136;
+  color: #ff4136;
 }
 
 .suggestion-title:hover {
@@ -24,20 +24,11 @@
   margin: 30px 150px 0px 150px;
 }
 
-/* .meal-one, */
-/* .meal-two,
-.meal-three,
-.meal-four, */
-/* .meal-five, */
-/* .meal-six,
-.meal-seven, */
 .meal-eight,
 .meal-nine,
 .meal-ten,
 .meal-eleven,
 .meal-twelve,
-/* .meal-thirteen,
-.meal-fourteen, */
 .meal-fifteen {
   margin: 0px 30px 0px 30px;
 }
@@ -94,7 +85,7 @@
 .button-two {
   margin-top: 40px;
   border-radius: 7px;
-  background-color: #bf0000;
+  background-color: #ff4136;
   color: white;
   cursor: pointer;
 }
