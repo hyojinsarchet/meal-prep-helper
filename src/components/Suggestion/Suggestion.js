@@ -33,91 +33,61 @@ class Suggestion extends Component {
           ref={slider => (this.slider = slider)}
           {...settings}
         >
-          {/* <div>
-            <a className="meal-one" href="">
-              <img src="images/meal1.jpeg" alt="meal-one" />
-            </a>
-          </div> */}
           <div>
-            <a className="meal-ten" href="">
+            <a
+              className="meal-ten"
+              target="_blank"
+              href="https://sweetpeasandsaffron.com/4-fruit-filled-meal-prep-snacks/"
+            >
               <img src="images/meal10.jpg" alt="meal-ten" />
             </a>
           </div>
           <div>
-            <a className="meal-eleven" href="">
+            <a
+              className="meal-eleven"
+              target="_blank"
+              href="https://www.beachbodyondemand.com/blog/mexican-food-meal-prep-1800-2100-calories"
+            >
               <img src="images/meal11.jpg" alt="meal-eleven" />
             </a>
           </div>
-
           <div>
-            <a className="meal-twelve" href="">
+            <a
+              className="meal-twelve"
+              target="_blank"
+              href="https://www.foodnetwork.com/recipes/food-network-kitchen/garlic-chicken-and-potatoes-recipe-2120118"
+            >
               <img src="images/meal12.jpg" alt="meal-twelve" />
             </a>
           </div>
 
           <div>
-            <a className="meal-eight" href="">
-              <img src="images/meal8.jpg" alt="meal-eight" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-nine" href="">
+            <a
+              className="meal-nine"
+              target="_blank"
+              href="https://kristineskitchenblog.com/meal-prep-greek-couscous-salad/"
+            >
               <img src="images/meal9.jpg" alt="meal-nine" />
             </a>
           </div>
 
           <div>
-            <a className="meal-two" href="">
-              <img src="images/meal2.jpg" alt="meal-two" />
+            <a
+              className="meal-eight"
+              target="_blank"
+              href="https://www.eatwell101.com/meal-prep-roasted-chicken-and-sweet-potato"
+            >
+              <img src="images/meal8.jpg" alt="meal-eight" />
             </a>
           </div>
 
           <div>
-            <a className="meal-four" href="">
-              <img src="images/meal4.jpg" alt="meal-four" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-three" href="">
-              <img src="images/meal3.jpg" alt="meal-three" />
-            </a>
-          </div>
-
-          <div>
-            <a className="meal-sixteen" href="">
-              <img src="images/meal16.jpg" alt="meal-sixteen" />
-            </a>
-          </div>
-
-          {/* <div>
-            <a className="meal-five" href="">
-              <img src="images/meal5.jpeg" alt="meal-five" />
-            </a>
-          </div> */}
-          {/* <div>
-            <a className="meal-six" href="">
-              <img src="images/meal6.jpg" alt="meal-six" />
-            </a>
-          </div> */}
-
-          <div>
-            <a className="meal-fourteen" href="">
-              <img src="images/meal14.jpg" alt="meal-fourteen" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-thirteen" href="">
-              <img src="images/meal13.jpeg" alt="meal-thirteen" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-fifteen" href="">
+            <a
+              className="meal-fifteen"
+              target="_blank"
+              href="https://dailyburn.com/life/health/meal-prep-ideas-healthy-eating/"
+            >
               <img src="images/meal15.jpg" alt="meal-fifteen" />
-            </a>
-          </div>
-          <div>
-            <a className="meal-seven" href="">
-              <img src="images/meal7.jpg" alt="meal-seven" />
             </a>
           </div>
         </Slider>

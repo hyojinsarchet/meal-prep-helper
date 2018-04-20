@@ -4,7 +4,7 @@ import Forms from "./Forms";
 import Tables from "./Tables";
 
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import injectTapEventPlugin from "react-tap-event-plugin";
+// import injectTapEventPlugin from "react-tap-event-plugin";
 
 // injectTapEventPlugin();
 
