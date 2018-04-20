@@ -21,9 +21,9 @@ class Header extends Component {
             Ingredients
           </Link> */}
 
-          <Link to="/" className="header-home">
+          {/* <Link to="/" className="header-home">
             Home
-          </Link>
+          </Link> */}
           <Link to="/plan" className="header-plan">
             Meal Plan
           </Link>
