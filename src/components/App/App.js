@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "../Header/Header";
 import Suggestion from "../Suggestion/Suggestion";
@@ -9,13 +10,18 @@ import Footer from "../Footer/Footer";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Suggestion />
-        <Plan />
-        <Ingredients />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          {/* <Suggestion /> */}
+          <Switch>
+            <Route exact path="/" component={Suggestion} />
+            <Route path="/plan" component={Plan} />
+            <Route path="/ingredients" component={Ingredients} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
