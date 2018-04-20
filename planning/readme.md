@@ -43,8 +43,8 @@ This is a Meal-Prep-Helper app. It has the following features:
 
 ### Gold
 
-* Ability to make CRUD functionality on ingredient(already have) list.
-* Ability to make CRUD functionality on ingredient(to buy) list.
+* Ability to make CRUD functionality on the meal list using back-end.
+* Ability to make CRUD functionality on the ingredient list using back-end.
 * Ability to make comment section.
 
 ### Used tools in the project
