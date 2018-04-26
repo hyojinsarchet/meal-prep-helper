@@ -4,9 +4,6 @@ import Forms from "./Forms";
 import Tables from "./Tables";
 
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-// import injectTapEventPlugin from "react-tap-event-plugin";
-
-// injectTapEventPlugin();
 
 class Ingredients extends Component {
   state = {
@@ -40,7 +37,7 @@ class Ingredients extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <div className="Ingredients">
+        <div id="ingredients" className="Ingredients">
           <h2 className="ingredient-title">Shopping List</h2>
           <p>- Add the ingredients you need to buy for upcoming week!</p>
           <div className="forms-tables">

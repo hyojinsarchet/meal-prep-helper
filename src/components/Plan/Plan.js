@@ -5,16 +5,8 @@ import Table from "./Table";
 
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import injectTapEventPlugin from "react-tap-event-plugin";
-// import getMuiTheme from "material-ui/styles/getMuiTheme";
-// import { deepOrange50, deepOrangeA700 } from "material-ui/styles/colors";
-injectTapEventPlugin();
 
-// const muiTheme = getMuiTheme({
-//   palette: {
-//     primary1Color: deepOrange50,
-//     primary2Color: deepOrangeA700
-//   }
-// });
+injectTapEventPlugin();
 
 class Plan extends Component {
   state = {
@@ -49,7 +41,7 @@ class Plan extends Component {
     return (
       <MuiThemeProvider>
         {/* muiTheme={muiTheme} */}
-        <div className="Plan">
+        <div id="plan" className="Plan">
           <h2 className="plan-title">Weekly Meal Plan</h2>
           <p>- Plan your meals ahead and save your time and money!</p>
           <div className="form-table">
